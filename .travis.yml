@@ -15,5 +15,9 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: nakul-docker-react
-  env: NakulDockerReact-env
+  app: "nakul-docker-react"
+  env: "NakulDockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-2-135015496169"
+  bucket_path: "nakul-docker-react"
+  on:
+    branch: master
