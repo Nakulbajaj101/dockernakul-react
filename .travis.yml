@@ -1,4 +1,7 @@
 sudo: required
+language: node_js
+node_js:
+  - "10"
 services:
   - docker
 
@@ -7,4 +10,3 @@ before_install:
 
 script:
   - docker run nakul/docker-react npm run test -- --coverage
-  
