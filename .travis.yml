@@ -10,7 +10,6 @@ before_install:
 
 script:
   - docker run nakul/docker-react npm test -- --coverage
-  - travis_wait 1
 
 deploy:
   provider: elasticbeanstalk
