@@ -13,6 +13,8 @@ script:
   - npm run test
 deploy:
   provider: elasticbeanstalk
+  access_key_id: "AKIAI367IOYXH6OUHRKQ"
+  secret_access_key: "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"
   region: "us-east-2"
   app: "nakul-docker-react"
   env: "NakulDockerReact-env"
